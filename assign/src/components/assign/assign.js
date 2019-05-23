@@ -11,6 +11,7 @@ const assign = () => {
                 <li>Sass</li>
                 <li>React-router</li>
                 <li>Axios</li>
+                <li>Mobile Friendly</li>
             </nav>
         </div>
     );
