@@ -1,0 +1,73 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.user{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    padding: 4rem 0;
+    background: linear-gradient( 214deg, $color-primary-dark, $color-primary-light);
+    border-radius: 7px;
+
+    @include respond(phone){
+        flex-direction: column;
+        width: 85%;
+    }
+
+    &-img{
+        width: 40rem;
+        margin: 0 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include respond(phone){
+            width: 100%;
+            margin: auto;
+            margin-bottom: 2rem;
+        }
+
+    }
+    
+    .img{
+        width: 80%;
+    }
+
+    &-right{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        justify-content: center;
+
+        @include respond(phone){
+            width: 100%;
+            padding: 2rem;
+        }
+
+        &-frd{
+            display: flex;
+            flex-wrap: wrap;
+
+            .half{
+                width: 50%;
+            }
+
+            
+            &> *{
+                margin: .5rem;
+            }
+            
+            &-bio{
+                width: 100%;
+                margin-bottom: 3rem;
+            }
+
+        }
+
+        span{
+            font-size: 2.4rem;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.assign1{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem 0;
+
+    @include respond(phone){
+        height: auto;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10rem;
+
+        &-input{
+            font-size: 4rem;
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+
+            @include respond(phone){
+                font-size: 3rem;
+                padding: 1rem;
+            }
+        }
+
+        &-btn{
+            font-size: 2rem;
+            padding: 1rem;
+            border: none;
+            width: 100%;
+            background: $color-primary;
+            transition: background .2s ease-in;
+
+            &:hover{
+                background: $color-primary-dark;
+            }
+        }
+    }
+}

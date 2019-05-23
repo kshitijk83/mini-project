@@ -1,0 +1,28 @@
+@import '../../variables.scss';
+
+.assign2{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #img{
+        padding: 2rem;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        background: $color-primary;
+    }
+
+    button{
+        font-size: 3rem;
+        border: none;
+        background: $color-primary;
+        padding: 2rem;
+    }
+
+    img{
+        width: 40rem;
+        margin: 2rem 0;
+    }
+}

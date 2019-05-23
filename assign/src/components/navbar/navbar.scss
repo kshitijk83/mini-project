@@ -1,0 +1,29 @@
+@import '../../variables.scss'; 
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+    background: $color-primary;
+}
+
+.active{
+    background:  $color-primary-dark;
+}
+
+.blh{
+    /* background: red; */
+    width: 50%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease;
+}
+
+.blh:hover{
+    background: $color-primary-dark;
+}
